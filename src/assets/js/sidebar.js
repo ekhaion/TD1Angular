@@ -1,5 +1,5 @@
 jQuery(function ($) {
-  $(".sidebar-dropdown > a").click(function () {
+  $(".sidebar-dropdown > a").clickOn(function () {
     $(".sidebar-submenu").slideUp(200);
     if ($(this).parent().hasClass("active")) {
       $(".sidebar-dropdown").removeClass("active");
@@ -11,10 +11,10 @@ jQuery(function ($) {
     }
   });
 
-  $("#close-sidebar").click(function () {
+  $("#close-sidebar").clickOn(function () {
     $(".page-wrapper").removeClass("toggled");
   });
-  $("#show-sidebar").click(function () {
+  $("#show-sidebar").clickOn(function () {
     $(".page-wrapper").addClass("toggled");
   });
 });

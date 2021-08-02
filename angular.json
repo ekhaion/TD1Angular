@@ -30,9 +30,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "assets/js/sidebar.js"
-            ]
+            "scripts": ["node_modules/jquery/dist/jquery.slim.js"]
           },
           "configurations": {
             "production": {
