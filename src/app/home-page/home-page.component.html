@@ -1,16 +1,33 @@
-<app-sidebar></app-sidebar>
-<div class="jumbotron my-5 text-center shadow rounded">
-    <h1 class="display-3 text-danger">{{ title }}</h1>
-    <p class="lead">Il s'agit d'un essai.</p>
-    <hr class="my-4">
-    <p>Mais je ferais mieux la prochaine fois c'est sûr !</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" routerLink="**" role="button">Vers ailleurs</a>
-    </p>
+<div class="container">
+    <app-header></app-header>
 </div>
-<div class="container d-flex">
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
+
+<div class="container col-6">
+    <div class="row">
+            <div class="jumbotron my-5 text-center shadow rounded">
+                <h1 class="display-3 text-danger">{{ title }}</h1>
+                <p class="lead">Il s'agit d'un essai.</p>
+                <hr class="my-4">
+                <p>Mais je ferais mieux la prochaine fois c'est sûr !</p>
+                <p class="lead">
+                <a class="btn btn-primary btn-lg" routerLink="**" role="button">Vers ailleurs</a>
+                </p>
+            </div>
+        
+    </div>
+</div>
+
+<div class="container d-flex col-8">
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+</div>
+
+<div class="container">
+    <app-footer></app-footer>
+</div>
+
+<div class="container d-flex col-3">
+    <app-sidebar></app-sidebar>
 </div>

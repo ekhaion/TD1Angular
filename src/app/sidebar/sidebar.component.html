@@ -1,15 +1,205 @@
 <div class="container d-flex">
-    <header class="header" id="header">
-        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
-    </header>
-    <div class="container">
-    <div class="l-navbar" id="nav-bar">
-        <nav class="nav">
-            <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">BBBootstrap</span> </a>
-                <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Utilisateurs</span> </a> <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Favoris</span> </a> <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Dossiers</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Statistiques</span> </a> </div>
-            </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Deconnexion</span> </a>
-        </nav>
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" routerLink="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a routerLink="#">Mon dashboard</a>
+        <div id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="assets/img/abashung.jpg"
+            alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name">Georges
+            <strong>Capard</strong>
+          </span>
+          <span class="user-role">Administrateur</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>En ligne</span>
+          </span>
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      <div class="sidebar-search">
+        <div>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" placeholder="Search...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar-search  -->
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>Général</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="**">
+              <i class="fa fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+              <span class="badge badge-pill badge-warning">Nouveau</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a routerLink="truc">Dashboard 1
+                    <span class="badge badge-pill badge-success">Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="muche">Dashboard 2</a>
+                </li>
+                <li>
+                  <a routerLink="bidule">Dashboard 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="**">
+              <i class="fa fa-shopping-cart"></i>
+              <span>E-commerce</span>
+              <span class="badge badge-pill badge-danger">3</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a routerLink="#">Produits
+
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="#">Commandes</a>
+                </li>
+                <li>
+                  <a routerLink="#">Carte de Crédit</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="#">
+              <i class="far fa-gem"></i>
+              <span>Composants</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a routerLink="#">General</a>
+                </li>
+                <li>
+                  <a routerLink="#">Panneaux</a>
+                </li>
+                <li>
+                  <a routerLink="#">Tables</a>
+                </li>
+                <li>
+                  <a routerLink="#">Icones</a>
+                </li>
+                <li>
+                  <a routerLink="#">Formulaire</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="#">
+              <i class="fa fa-chart-line"></i>
+              <span>Graphiques</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a routerLink="#">Graphique de la pie</a>
+                </li>
+                <li>
+                  <a routerLink="#">Graphique ligne</a>
+                </li>
+                <li>
+                  <a routerLink="#">Graphique du bar</a>
+                </li>
+                <li>
+                  <a routerLink="#">Histogramme</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a routerLink="#">
+              <i class="fa fa-globe"></i>
+              <span>Cartes</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a routerLink="#">Google maps</a>
+                </li>
+                <li>
+                  <a routerLink="#">Open street map</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a routerLink="#">
+              <i class="fa fa-book"></i>
+              <span>Documentation</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="#">
+              <i class="fa fa-calendar"></i>
+              <span>Calendrier</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="#">
+              <i class="fa fa-folder"></i>
+              <span>Examples</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
     </div>
+    <!-- sidebar-content  -->
+    <div class="sidebar-footer">
+      <a routerLink="#">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a routerLink="#">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a routerLink="#">
+        <i class="fa fa-cog"></i>
+        <span class="badge-sonar"></span>
+      </a>
+      <a routerLink="#">
+        <i class="fa fa-power-off"></i>
+      </a>
     </div>
+  </nav>
+  <!-- sidebar-wrapper  -->
+  
+  <!-- page-content" -->
+</div>
 </div>
